@@ -1,0 +1,2 @@
+# claritydoc
+Documentación ClarityEnergy
