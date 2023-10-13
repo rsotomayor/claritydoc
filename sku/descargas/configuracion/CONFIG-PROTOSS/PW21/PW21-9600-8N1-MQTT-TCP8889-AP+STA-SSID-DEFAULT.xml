@@ -1,0 +1,120 @@
+<!--SYS Config-->
+<SYS key='User' value='admin'>
+<SYS key='Password' value='admin'>
+<SYS key='DHCP' value='Enable'>
+<SYS key='Ip Address' value='10.10.100.10'>
+<SYS key='GateWay' value='10.10.100.254'>
+<SYS key='Mask' value='255.255.255.0'>
+<SYS key='Host Name' value='PW21'>
+<SYS key='DNS' value='10.10.100.254'>
+<SYS key='Telnet' value='Enable'>
+<SYS key='Telnet Port' value='23'>
+<SYS key='Echo' value='Enable'>
+<SYS key='Web' value='Enable'>
+<SYS key='Web Port' value='80'>
+<SYS key='Ipv6' value='Disable'>
+<SYS key='Ipv6 address' value=''>
+<SYS key='Ipv6 DHCP' value='Disable'>
+<SYS key='NTP' value='Enable'>
+<SYS key='NTP Server' value='time.google.com'>
+<SYS key='NTP Port' value='123'>
+<SYS key='NTP GMT' value='0'>
+<SYS key='Longitude' value='0.000000'>
+<SYS key='Latitude' value='0.000000'>
+<SYS key='Customer ID' value='PW21'>
+<SYS key='Config Version' value='0'>
+<SYS key='NetworkMode' value='Router'>
+<SYS key='WiFiMode' value='APSTA'>
+<SYS key='WiFiAPSSID' value='PW21_D954'>
+<SYS key='WiFiAPKey' value='clarityenergy'>
+<SYS key='WiFiSTASSID' value='DEFAULT'>
+<SYS key='WiFiSTAKey' value='1234567890'>
+<SYS key='WiFiAPCH' value='0'>
+<SYS key='WiFiHideSSID' value='0'>
+<SYS key='WiFiRoamingEn' value='0'>
+<SYS key='WiFiScanAbort' value='0'>
+<SYS key='ScanRSSIThreshold' value='0'>
+<SYS key='ConnectRSSIThreshold' value='0'>
+<SYS key='LanIpAddress' value='10.10.100.254'>
+<SYS key='LanMarsk' value='255.255.255.0'>
+<SYS key='LanDhcpEn' value='Enable'>
+<SYS key='EthernetMode' value='LAN'>
+<SYS key='AppWatchdog' value='0'>
+<SYS key='ModbusTime' value='0'>
+<SYS key='MQTT' value='0'>
+<SYS key='MqttServer' value=''>
+<SYS key='MqttServerPort' value='1883'>
+<SYS key='MqttAccount' value=''>
+<SYS key='MqttGatewayID' value=''>
+<SYS key='MqttUserName' value=''>
+<SYS key='MqttPassword' value=''>
+
+<!--UART Config-->
+<UART key='Baudrate' value='9600'>
+<UART key='Databits' value='8'>
+<UART key='Stopbits' value='1'>
+<UART key='Parity' value='NONE'>
+<UART key='FlowCtrl' value='Half-Duplex'>
+<UART key='Software FlowCtrl' value='Disable'>
+<UART key='Xon' value='11'>
+<UART key='Xoff' value='13'>
+<UART key='Protocol' value='NONE'>
+<UART key='Frame Length' value='16'>
+<UART key='Frame Time' value='100'>
+<UART key='Tag Enable' value='Disable'>
+<UART key='Tag Head' value='00'>
+<UART key='Tag Tail' value='00'>
+<UART key='Buffer Size' value='1024'>
+<UART key='gapTime Size' value='50'>
+<UART key='cliGetin' value='1'>
+<UART key='serialStr' value='+++'>
+<UART key='waitTime' value='300'>
+
+<!--SOCK Config-->
+<SOCK name='netp' key='Name' value='netp'>
+<SOCK name='netp' key='Protocol' value='TCP-CLIENT'>
+<SOCK name='netp' key='Server Addr' value='tcp.clarityenergy.cl'>
+<SOCK name='netp' key='Remote Port' value='8889'>
+<SOCK name='netp' key='Local Port' value='0'>
+<SOCK name='netp' key='Buffer Size' value='2048'>
+<SOCK name='netp' key='KeepAlive' value='60'>
+<SOCK name='netp' key='Timeout' value='600'>
+<SOCK name='netp' key='Security' value='NONE'>
+<SOCK name='netp' key='HeartBeat' value='Enable'>
+<SOCK name='netp' key='HeartBeat Time' value='60'>
+<SOCK name='netp' key='HeartBeat Serial' value='%MAC'>
+<SOCK name='netp' key='Regist Mode' value='Link'>
+<SOCK name='netp' key='Regist Code' value='%MAC'>
+<SOCK name='netp' key='Connect Mode' value='Always'>
+<SOCK name='netp' key='VcomEn' value='0'>
+<SOCK name='netp' key='Rout' value='uart'>
+
+<!--SOCK Config-->
+<SOCK name='mqtt' key='Name' value='mqtt'>
+<SOCK name='mqtt' key='Protocol' value='MQTT'>
+<SOCK name='mqtt' key='Server Addr' value='mqtt.clarityenergy.cl'>
+<SOCK name='mqtt' key='Remote Port' value='1883'>
+<SOCK name='mqtt' key='Local Port' value='0'>
+<SOCK name='mqtt' key='Buffer Size' value='2048'>
+<SOCK name='mqtt' key='KeepAlive' value='60'>
+<SOCK name='mqtt' key='Timeout' value='600'>
+<SOCK name='mqtt' key='Security' value='NONE'>
+<SOCK name='mqtt' key='HeartBeat' value='Disable'>
+<SOCK name='mqtt' key='Regist Mode' value='Disable'>
+<SOCK name='mqtt' key='Regist Code' value=''>
+<SOCK name='mqtt' key='Connect Mode' value='Always'>
+<SOCK name='mqtt' key='VcomEn' value='0'>
+<SOCK name='mqtt' key='Rout' value='uart'>
+<SOCK name='mqtt' key='MQTT Ping Time' value='60'>
+<SOCK name='mqtt' key='MQTT Version' value='4'>
+<SOCK name='mqtt' key='MQTT Client ID' value='%MAC'>
+<SOCK name='mqtt' key='MQTT User' value='mqtt'>
+<SOCK name='mqtt' key='MQTT Passwd' value='mqtt'>
+<SOCK name='mqtt' key='MQTT Subscribe Topic' value='clarity/in/%MAC'>
+<SOCK name='mqtt' key='MQTT Subscribe Qos' value='0'>
+<SOCK name='mqtt' key='MQTT Publish Topic' value='clarity/out/%MAC'>
+<SOCK name='mqtt' key='MQTT Publish Qos' value='0'>
+
+<!--CRC Config-->
+<CRC key='CheckNum' value='366793'>
+
